@@ -1,0 +1,47 @@
+{
+  "name": "aging-safe-backend",
+  "version": "1.0.0",
+  "description": "TypeScript Express API backend for Aging Safe smart home monitoring system",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts",
+    "clean": "rm -rf dist",
+    "rebuild": "npm run clean && npm run build",
+    "type-check": "tsc --noEmit",
+    "lint": "echo \"ESLint not configured yet\"",
+    "test": "echo \"Tests not implemented yet\" && exit 0"
+  },
+  "keywords": [
+    "aging-safe",
+    "smart-home",
+    "typescript",
+    "express",
+    "api",
+    "monitoring",
+    "elderly-care"
+  ],
+  "author": "Aging Safe Team",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.0.3",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
