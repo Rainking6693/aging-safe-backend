@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: aging-safe-backend
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3333
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        value: https://closetclear-app.netlify.app
